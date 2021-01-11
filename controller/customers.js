@@ -6,7 +6,7 @@ module.exports = {
     async create(req,res) {
         console.log("Request in Create Cusotmer ", req.body);
         try {
-            const customerCollection = await User
+            const customerCollection = await Customer
             .create({
                 customerName : req.body.customerName,
                 contactNumber	: req.body.contactNumber,
