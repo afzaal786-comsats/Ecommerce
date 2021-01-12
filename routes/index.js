@@ -9,6 +9,7 @@ module.exports=(app)=>{
     });
 
 
-    app.post('/api/customer/create',customerController.createCustomer);
+    app.post('/api/customer/create',customerController.createCustomer);             // Create new customer
+    app.get('/api/customer/findall', customerController.findAllCustomers)           // find All Customers 
 
 }
