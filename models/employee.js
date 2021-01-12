@@ -1,6 +1,6 @@
 // Employee Model
 
-module.export=(sequelize,DataTypes)=>{
+module.exports=(sequelize,DataTypes)=>{
     let Employees =sequelize.define('Employees',{
         lastName: DataTypes.STRING,
         firstName: DataTypes.STRING,

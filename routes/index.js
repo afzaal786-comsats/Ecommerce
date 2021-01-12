@@ -1,4 +1,4 @@
-const customerController = require('../controller').customer;
+const customerController = require('../controller/customers');
 
 
 module.exports=(app)=>{
@@ -9,6 +9,6 @@ module.exports=(app)=>{
     });
 
 
-    app.post('/api/customer/create',customerController.create);
+    app.post('/api/customer/create',customerController.createCustomer);
 
 }
