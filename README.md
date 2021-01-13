@@ -16,6 +16,11 @@ Sequelize init will creat a folder `config`,`controller`,`migrations` and `model
 
 Create a Database `ecommerce` in Postgres Dashboard
 
+To Create Migration 
+sequelize migration:create --name name_of_your_migration
+
+To Run Migration
+sequelize db:migrate
 ```
 $ node_modules/.bin/sequelize db:migrate      
 ```
