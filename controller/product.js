@@ -26,6 +26,7 @@ module.exports = {
             unit: req.body.unit,
             price: req.body.price,
             categoryID: req.body.categoryID,
+            SupplierID: req.body.SupplierID,
           })
           res.status(200).send(productCollection)
         } else {
